@@ -1,0 +1,52 @@
+
+/* */
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+.main-content{
+    border: 2px solid lightgrey;
+    padding: 70px;
+}
+
+h2 {
+    color: #006EB6;
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+h1, h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+h1, h2, .main-content {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1, h2, p {
+    margin-bottom: 30px;
+
+}
+
+.points li{
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+img {
+    margin-top: 40px;
+    width: 150px;
+}
