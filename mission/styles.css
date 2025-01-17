@@ -5,6 +5,11 @@ body {
     font-family: 'Times New Roman', serif;
 }
 
+.dark {
+    background-color: #333;
+    color: white;
+}
+
 .main-content{
     border: 2px solid lightgrey;
     padding: 70px;
@@ -49,4 +54,10 @@ h1, h2, p {
 img {
     margin-top: 40px;
     width: 150px;
+}
+
+select {
+    border: 2px solid #006EB6;
+    text-align: center;
+    border-radius: 10px;
 }
