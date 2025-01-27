@@ -1,8 +1,7 @@
-
-/* */
 body {
     font-size: 20px;
     font-family: 'Times New Roman', serif;
+    
 }
 
 .dark {
@@ -10,9 +9,15 @@ body {
     color: white;
 }
 
-.main-content{
+.main-content {
     border: 2px solid lightgrey;
     padding: 70px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+h1 {
+    margin-bottom: 25px;
 }
 
 h2 {
@@ -20,34 +25,29 @@ h2 {
     border-bottom: 2px solid lightgrey;
     padding-bottom: 5px;
     font-size: 15px;
+    margin-bottom: 50px;
+    font-weight: 10;
 }
 
 h1, h2 {
     letter-spacing: 5px;
     text-transform: uppercase;
-    line-height: 1.5;
-}
-
-h1, h2, .main-content {
     text-align: center;
 }
 
 p {
     text-align: left;
+    line-height: 30px;
 }
 
 .main-content {
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
 }
 
-h1, h2, p {
-    margin-bottom: 30px;
-
-}
-
-.points li{
-    margin-bottom: 35px;
+.points li {
+    margin-bottom: 25px;
     text-align: left;
 }
 
