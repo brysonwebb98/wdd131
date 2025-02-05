@@ -122,10 +122,10 @@ ul li {
 }
 
 .viewer img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 60%;
+    height: auto;
     object-fit: contain;
-    /* I CAN'T GET THE IMAGE TO GO BIGGER. SPENT 1.5 HOURS ON THIS.  */
 }
 
 .close-viewer {
