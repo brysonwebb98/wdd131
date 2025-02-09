@@ -1,0 +1,92 @@
+/*
+COLORS TO USE  
+Gold color: #EFC69B
+Red color: #AF1B3F
+Dark color: #473144
+*/
+
+body {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+header, main, article { 
+    display: grid;
+}
+
+header {
+    justify-content: center;
+    font-size: 30px;
+    color: #473144;
+    padding: 1px;
+    
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: 65px 65px 65px;
+    justify-content: end;
+    border-top: solid #EFC69B 2px;
+    border-bottom: solid #EFC69B 2px;
+    padding: 15px;
+    gap: 20px;
+    list-style-type: none;
+    font-weight: 550;
+    max-width: 95%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+a {
+    color: #AF1B3F;
+    text-decoration: none;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.date-genre {
+    grid-column: 1;
+    font-size: 15px;
+    border-right: solid #EFC69B 2px;
+    justify-items: end;
+    padding: 10px;
+    list-style-type: none;
+}
+
+
+.book-info {
+    grid-column: 2;
+}
+
+.book-info h1 {
+    color: #AF1B3F;
+}
+
+form {
+    grid-column: 3;
+    border: solid #EFC69B 2px;
+    height: 100vh;
+}
+
+.book-info img {
+    width: 200px;
+    height: auto;
+}
+
+.skiptocontent a {
+    /* set the element to absolute positioning */
+    position: absolute;
+    /* move it off screen */
+    left: -999px;
+    /* Make sure it will be on the left edge of the screen */
+    /* Change the background and color to something that stands out */
+    background-color: #ff9900; /* Example background color */
+}
+.skiptocontent a:focus {
+	/* Move it back on when focused */
+    left: 0;
+}
