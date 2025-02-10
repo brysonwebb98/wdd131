@@ -24,9 +24,9 @@ handleResize();
 
 // MAKE IT WORK
 function viewerTemplate(imagePath, alt) {
-    return `<div class="viewer">
+    return `<div class="viewer"> <figure>
         <button class="close-viewer">X</button>
-        <img src="${imagePath}" alt="${alt}">
+        <img src="${imagePath}" alt="${alt}"> </figure>
     </div>`;
 }
 
