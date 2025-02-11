@@ -7,10 +7,9 @@ menuButton.addEventListener("click", function() {
     menu.classList.toggle("hide");
 });
 
-
 // HANDLE THE WINDOW RESIZE EVENT
 function handleResize() {
-    if (window.innerWidth > 1200) {
+    if (window.innerWidth > 1000) {
         menu.classList.remove("hide");
     }
     else {
@@ -20,7 +19,6 @@ function handleResize() {
 
 window.addEventListener("resize", handleResize);
 handleResize();
-
 
 // MAKE IT WORK
 function viewerTemplate(imagePath, alt) {
