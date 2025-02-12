@@ -21,12 +21,17 @@ h1 {
 }
 
 h2 {
-    color: rgb(0, 110, 182); /*Taken from byui.edu/branding/color-guide "Combined with Brand Blue, we typically use black, white, and gray. Together we refer to these as the "BYU-Idaho Brand Colors.""*/
+    color: #214491; /*Taken from byui.edu/branding/color-guide "Combined with Brand Blue, we typically use black, white, and gray. Together we refer to these as the "BYU-Idaho Brand Colors."" */
     border-bottom: 2px solid lightgrey;
     padding-bottom: 5px;
     font-size: 15px;
     margin-bottom: 50px;
     font-weight: 10;
+}
+
+.dark h2 {
+    color: #4F9ACF; 
+    /* ADDED .dark for contrast */
 }
 
 h1, h2 {
