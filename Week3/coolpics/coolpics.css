@@ -54,7 +54,7 @@ img {
 }
 
 ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: center;
@@ -83,7 +83,7 @@ ul li a {
 }
 
 .hide {
-    display: flex;
+    display: none;
 }
 .viewer {
     position: fixed;
@@ -130,14 +130,6 @@ ul li a {
 @media screen and (min-width: 700px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    ul {
-        display: none;
-    }
-
-    ul.hide {
-        display: none;
     }
 }
 
