@@ -20,6 +20,7 @@ form {
     grid-template-columns: 70% 30%;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
+    z-index: 2;
 }
 
 .total {
@@ -68,7 +69,7 @@ form {
     background-color: lightgrey;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
-    z-index: -1;
+    z-index: 1;
     display: grid;
     grid-template-columns: 82% 18%;
     grid-template-rows: 50% 50%;
@@ -87,7 +88,7 @@ form {
     grid-column: 2;
     grid-row: 2;
     display: grid;
-    width: 50%;
+    width: 100%;
     justify-self: left;
     align-self: flex-end;
     margin-bottom: 10px;
@@ -112,8 +113,3 @@ button:hover {
     background-color: lightgreen;
     cursor: pointer;
 }
-
-
-
-
-

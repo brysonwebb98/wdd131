@@ -20,7 +20,7 @@
             <!-- CARDNUMBER -->
             <div id="card-number">
                 <label for="cardnumber" class="cardlabel">CARD NUMBER</label>
-                <input type="text" id="cardnumberinput" name="cardnumber" placeholder="1234 5678 9101 1020" length="16" required>   
+                <input type="text" id="cardnumberinput" name="cardnumber" placeholder="1234 5678 9101 1020" maxlength="16" required>
             </div>    
             <!-- CARDHOLDER -->
             <div id="cardholder-container">
@@ -38,9 +38,9 @@
     <div class="card-back">
         <div id="card-stripe"></div>
         <div id="cvc-container">
-            <label for="card-cvc"> CVC/CVV</label>
-            <input id="card-cvc" placeholder="XXX-X" type="text" min-length="3" max-length="4">
-        </div>
+            <label for="card-cvc">CVC/CVV</label>
+            <input id="card-cvc" name="card-cvc" type="text" placeholder="XXX" required>
+        </div>        
     </div>
     <button type="submit">Submit</button>
     </form>
