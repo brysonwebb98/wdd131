@@ -9,101 +9,82 @@ body {
     font-family: Helvetica, Arial, sans-serif
 }
 
-main, article { 
+main { 
     display: grid;
+    grid-template-columns: 30% 40% 30%;
 }
 
 header {
-    justify-items: center;
-}
-
-header {
-    justify-content: center;
-    font-size: 30px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 25% 25% 25% 25%;
     color: #473144;
-    padding: 1px;
-    width: 100%;
 }
 
-.main-nav {
-    display: flex;
-    justify-content: flex-end;
-    border-top: solid #EFC69B 2px;
+header h1 {
+    grid-column: 2;
+}
+
+.border1, .border2 {
     border-bottom: solid #EFC69B 2px;
-    padding: 15px;
-    gap: 15px;
-    list-style-type: none;
-    font-weight: 550;
-    font-size: 18px;
+}
+
+.border1 {
+    grid-column: 1/5;
+    grid-row: 2;
+}
+
+.border2 {
+    grid-column: 1/5;
+    grid-row: 4;
 }
 
 nav {
-    width: 100%;
+    grid-row: 3;
+    grid-column: 3;
+    font-size: 20px;
+    margin-right: 80px;
 }
 
 a {
-    color: #AF1B3F;
     text-decoration: none;
+    color: #AF1B3F;
+}
+
+li {
+    list-style-type: none;
+}
+.main-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+#maincontent {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
 }
 
 article {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto 1fr;
+    grid-column: 1/3;
+    display: flex;
     gap: 20px;
-    padding: 20px;
 }
 
 .date-genre {
-    grid-column: 1;
-    font-size: 15px;
-    border-right: solid #EFC69B 2px;
-    justify-items: end;
-    padding: 10px;
-    list-style-type: none;
-}
-
-.date {
-    font-size: 17px;
+    width: 20%;
 }
 
 .book-info {
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.book-info h1 {
-    color: #AF1B3F;
+    flex-grow: 1;
 }
 
 form {
     grid-column: 3;
-    border: solid #EFC69B 2px;
-    padding: 20px;
-    grid-row: 1/3;
 }
 
-.book-info img {
+img {
+    height: 200px;
     width: 200px;
-    height: auto;
-    
 }
-
-.skiptocontent a {
-    /* set the element to absolute positioning */
-    position: absolute;
-    /* move it off screen */
-    left: -999px;
-    /* Make sure it will be on the left edge of the screen */
-    /* Change the background and color to something that stands out */
-    background-color: #ff9900; /* Example background color */
-}
-.skiptocontent a:focus {
-	/* Move it back on when focused */
-    left: 0;
-}
-
 
