@@ -10,6 +10,14 @@
     --paragraph-font: Lato, Helvetica, sans-serif;  
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: var(--accent1-color);
+    margin-top: 100px;
+}
+
 body {
     background-color: var(--accent2-color);
 }
